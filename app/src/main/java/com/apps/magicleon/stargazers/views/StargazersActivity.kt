@@ -37,7 +37,9 @@ class StargazersActivity : AppCompatActivity() {
             val totalItemCount = linearLayoutManager.itemCount
             val firstVisibleItemPosition = linearLayoutManager.findFirstCompletelyVisibleItemPosition()
             if ((visibleItemCount + firstVisibleItemPosition) >= totalItemCount && firstVisibleItemPosition >= 0 && _moreToLoad) {
-                makeRequest()
+                recyclerView.post {
+                    makeRequest()
+                }
             }
         }
     }
