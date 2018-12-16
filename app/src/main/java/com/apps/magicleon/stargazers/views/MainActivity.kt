@@ -6,6 +6,7 @@ import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.EditText
 import com.apps.magicleon.stargazers.R
+import com.apps.magicleon.stargazers.utils.ValidationUtils
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -45,8 +46,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun isFieldValid(field: EditText): Boolean {
-        val stringValue = field.text
-        return !stringValue.isNullOrEmpty()
+        val stringValue = field.text.toString()
+        return ValidationUtils.isSearchFieldValueValid(stringValue)
     }
 
     override fun onSaveInstanceState(outState: Bundle?, outPersistentState: PersistableBundle?) {

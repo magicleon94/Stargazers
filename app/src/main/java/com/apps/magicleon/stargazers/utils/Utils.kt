@@ -1,18 +1,20 @@
 package com.apps.magicleon.stargazers.utils
 
 class Utils {
-    private val _baseGithubApiURL = "https://api.github.com/"
+    companion object {
+        private const val baseGithubApiURL = "https://api.github.com/"
 
-    fun buildStargazersRequestURLString(username: String, repository: String, page: Int): String {
+        fun buildStargazersRequestURLString(username: String, repository: String, page: Int): String {
 
-        val builder = StringBuilder(_baseGithubApiURL)
+            val builder = StringBuilder(baseGithubApiURL)
 
-        return builder
-            .append("repos/")
-            .append("$username/")
-            .append("$repository/")
-            .append("stargazers")
-            .append("?page=$page")
-            .toString()
+            return builder
+                .append("repos/")
+                .append("$username/")
+                .append("$repository/")
+                .append("stargazers")
+                .append("?page=$page")
+                .toString()
+        }
     }
 }

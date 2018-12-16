@@ -151,7 +151,7 @@ class StargazersActivity : AppCompatActivity() {
         _lock.lock()
         if (!_loading) {
             val requestURLString =
-                Utils().buildStargazersRequestURLString(requestUsername, requestRepository, _currentPage)
+                Utils.buildStargazersRequestURLString(requestUsername, requestRepository, _currentPage)
             val stargazersCustomRequest = StargazersRequest(
                 Request.Method.GET, requestURLString,
                 Response.Listener { response -> manageResponse(response) },
