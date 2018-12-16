@@ -1,0 +1,28 @@
+<resources>
+  <string name="app_name">Stargazers</string>
+  <string name="iv_stargazer_avatar_description">User avatar</string>
+  <string name="no_stargazers_found">No stargazers were found for this repo :(</string>
+  <string name="generic_error">Error</string>
+  <string name="no_connection_error_message">Cannot connect to Internet…Please check your connection</string>
+  <string name="server_error_message">Server error. Give it some time and try again</string>
+  <string name="connection_timeout_error_message">Connection timed out. Please check your connection and try again</string>
+  <string name="label_button_search_stargazers">Search stargazers!</string>
+  <string name="label_repository">Repository</string>
+  <string name="label_username">Username</string>
+  <string name="USERNAME_KEY">USERNAME</string>
+  <string name="REPOSITORY_KEY">REPOSITORY</string>
+  <string name="empty_field_error_message">This field cannot be empty</string>
+  <string name="stargazers_list_header">Stargazers for the repository %1s, by @%2s</string>
+  <string name="user_or_repo_not_found_error_message">Could not find user @%1s or repository %2s</string>
+  <string name="stargazers_adapter_data_key">STARGAZERS_ADAPTER_DATA</string>
+  <string name="scroll_position_key">SCROLL_POSITION</string>
+  <string name="progress_bar_visibility_key">PROGRESS_BAR_VISIBILITY</string>
+  <string name="tv_no_stargazers_visibility_key">TV_NO_STARGAZERS_VISIBILITY</string>
+  <string name="result_group_visibility_key">RESULT_GROUP_VISIBILITY</string>
+  <string name="stargazers_list_header_text_key">STARGAZERS_LIST_HEADER_TEXT</string>
+  <string name="current_page_key">CURRENT_PAGE</string>
+  <string name="more_to_load_key">MORE_TO_LOAD</string>
+  <string name="tv_error_text_key">TV_ERROR_TEXT</string>
+  <string name="tv_error_visibility">TV_ERROR_VISIBILITY</string>
+  <string name="stargazers_activity_title">Stargazers list</string>
+</resources>
